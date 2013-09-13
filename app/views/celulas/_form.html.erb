@@ -1,0 +1,9 @@
+
+  <%= f.input :nome %>
+  <%= f.input :data_nascimento, :input_html=>{:class=>'datepicker',:readonly=>true,:value=>@celula.data_nascimento.to_s_br},:as=>:string,:placeholder=>"Clique aqui para selecionar a data"%>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                igreja_celulas_path(@igreja), :class => 'btn' %>
+  </div>
+

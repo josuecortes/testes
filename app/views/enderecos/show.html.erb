@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Logradouro:</b>
+  <%= @endereco.logradouro %>
+</p>
+
+<p>
+  <b>Numero:</b>
+  <%= @endereco.numero %>
+</p>
+
+<p>
+  <b>Bairro:</b>
+  <%= @endereco.bairro %>
+</p>
+
+<p>
+  <b>Cidade:</b>
+  <%= @endereco.cidade %>
+</p>
+
+<p>
+  <b>Cep:</b>
+  <%= @endereco.cep %>
+</p>
+
+<p>
+  <b>Referencia:</b>
+  <%= @endereco.referencia %>
+</p>
+
+<p>
+  <b>Telefone fixo:</b>
+  <%= @endereco.telefone_fixo %>
+</p>
+
+<p>
+  <b>Telefone movel:</b>
+  <%= @endereco.telefone_movel %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @endereco.fax %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @endereco.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_endereco_path(@endereco) %> |
+<%= link_to 'Back', enderecos_path %>

@@ -1,0 +1,23 @@
+<h1>Listing supervisoes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @supervisoes.each do |supervisao| %>
+  <tr>
+    <td><%= supervisao.nome %></td>
+    <td><%= link_to 'Show', supervisao %></td>
+    <td><%= link_to 'Edit', edit_supervisao_path(supervisao) %></td>
+    <td><%= link_to 'Destroy', supervisao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Supervisao', new_supervisao_path %>
